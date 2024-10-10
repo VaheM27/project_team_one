@@ -1,6 +1,6 @@
 import Navbar from "./components/feature/Navbar/Navbar";
 
-import "./App.css";
+import "./App.scss";
 
 function App() {
   return (
