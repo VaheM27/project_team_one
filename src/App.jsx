@@ -8,6 +8,7 @@ import Careers from "./components/Footer/Pages/Careers";
 import Blog from "./components/Footer/Pages/Blog";
 import FAQ from "./components/Footer/Pages/FAQ";
 import Error404 from "./components/Footer/Pages/Error404";
+import Navbar from "./components/feature/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Signin from "./components/feature/Sign_in/Signin";
 
