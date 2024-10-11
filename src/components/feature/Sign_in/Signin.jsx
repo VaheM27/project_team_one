@@ -1,12 +1,12 @@
 import "./Signin.scss";
 
-import Signin_img from "../../../Assets/Images/Signin_img.png";
-import Google from "../../../Assets/Images/google.png";
-import Gmail from "../../../Assets/Images/gmail.png";
+import Signin_img from "../../../assets/images/Signin_img.png";
+import Google from "../../../assets/images/google.png";
+import Gmail from "../../../assets/images/gmail.png";
 
 const Signin = () => {
   return (
-    <div className=".container">
+    <div className="container">
       <div className="signInBox">
         <div className="signInLeft">
           <img src={Signin_img} alt="" />
