@@ -10,12 +10,16 @@ import FAQ from "./components/Footer/Pages/FAQ";
 import Error404 from "./components/Footer/Pages/Error404";
 import Footer from "./components/Footer/Footer";
 
-import "./App.css";
+import "./App.scss";
+import Signin from "./components/feature/Sign_in/Signin";
 
 const App = () => {
   return (
+
+<div className="App">
+      <Navbar />
+      <Signin />
     <Router>
-      <div>
         <Routes>
           <Route path="/support-center" element={<SupportCenter />} />
           <Route path="/invoicing" element={<Invoicing />} />
@@ -25,10 +29,9 @@ const App = () => {
           <Route path="/faq" element={<FAQ />} />
           <Route path="*" element={<Error404 />} />
         </Routes>
-
         <Footer />
-      </div>
     </Router>
+</div>
   );
 };
 
