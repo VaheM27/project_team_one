@@ -13,11 +13,13 @@ import Footer from "./components/Footer/Footer";
 import Signin from "./components/feature/Sign_in/Signin";
 
 import "./App.scss";
+import DealSection from "./components/Section2/DealSection";
 
 const App = () => {
   return (
     <div className="App">
       <Navbar />
+      <DealSection />
       <Signin />
       <Router>
         <Routes>
