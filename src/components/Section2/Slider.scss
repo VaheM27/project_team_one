@@ -1,0 +1,38 @@
+.slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 404px;
+  height: 582px;
+  margin: 0 auto;
+}
+
+.slider-image {
+  width: 204px;
+  height: 382px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.slider-button {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
