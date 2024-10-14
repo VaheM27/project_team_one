@@ -1,4 +1,4 @@
-const initialState = {
+ const initialState = {
   days: 10,
   hours: 5,
   minutes: 30,

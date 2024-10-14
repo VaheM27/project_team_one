@@ -14,13 +14,15 @@ import Signin from "./components/feature/Sign_in/Signin";
 
 import "./App.scss";
 import DealSection from "./components/Section2/DealSection";
+import Newarrivals from "./components/feature/Newarrivals/Newarrivals";
+
 
 const App = () => {
   return (
     <div className="App">
       <Navbar />
       <DealSection />
-      <Signin />
+      <Newarrivals />
       <Router>
         <Routes>
           <Route path="/support-center" element={<SupportCenter />} />
