@@ -2,7 +2,7 @@
   display: flex;
 
   .signInRigth {
-    padding: 92px 0 187px 156px;
+    padding: 92px 0 187px 120px;
 
     p {
       font-weight: 400;
@@ -10,7 +10,7 @@
     }
 
     .signInBlock {
-        padding-top: 82px;
+      padding-top: 82px;
       img {
         width: 32;
         height: 32px;
@@ -25,7 +25,7 @@
         display: flex;
         column-gap: 60px;
 
-        button {
+        .button {
           display: inline-flex;
           padding: 8px 32px;
           font-size: 16px;
@@ -35,7 +35,12 @@
           border-radius: 8px;
           border: 1px solid blue;
           background: none;
+          transition: transform 0.3s ;
         }
+
+      .button:hover {
+        transform: translateY(-5px);
+      }
       }
 
       .inputs {
@@ -45,11 +50,12 @@
         row-gap: 30px;
 
         input {
-            color: rgba(157, 157, 157, 1);
-            font-size: 16px;
-            font-weight: 400;
-            border: none;
-            border-bottom: 1px solid rgba(157, 157, 157, 1);
+          color: rgba(157, 157, 157, 1);
+          padding: 15px 5px;
+          font-size: 16px;
+          font-weight: 400;
+          border: none;
+          border-bottom: 1px solid rgba(157, 157, 157, 1);
         }
       }
 
@@ -60,23 +66,34 @@
         row-gap: 20px;
 
         .firstBut {
-            background-color: black;
-            color: white;
-            font-size: 16px;
-            font-weight: 400;
-            padding: 10px 250px;
-            border-radius: 10px;
-            border: 1px solid rgba(0, 0, 0, 0.15);
+          background-color: black;
+          color: white;
+          font-size: 16px;
+          font-weight: 400;
+          padding: 10px 250px;
+          border-radius: 10px;
+          border: 1px solid rgba(0, 0, 0, 0.15);
+        }
+
+        .firstBut:hover {
+          background: wheat;
+          color: rgb(0, 0, 0);
         }
 
         .secBut {
-            background: none;
-            color:rgba(91, 134, 229, 1);
-            font-size: 16px;
-            font-weight: 400;
-            padding: 10px 225px;
-            border-radius: 8px;
-            border: 1px solid rgba(91, 134, 229, 1);
+          background: none;
+          color: rgba(91, 134, 229, 1);
+          font-size: 16px;
+          font-weight: 400;
+          padding: 10px 225px;
+          border-radius: 8px;
+          border: 1px solid rgba(91, 134, 229, 1);
+        }
+
+
+        .secBut:hover {
+          background-color: rgb(190, 159, 159);
+          color: wheat;
         }
       }
     }
