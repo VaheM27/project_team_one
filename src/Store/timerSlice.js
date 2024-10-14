@@ -1,5 +1,3 @@
-// Store/timerSlice.js
-
 const initialState = {
   days: 10,
   hours: 5,
