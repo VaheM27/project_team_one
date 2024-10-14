@@ -1,8 +1,8 @@
 import "./Signin.scss";
 
-import Signin_img from "../../../Assets/Images/Signin_img.png";
-import Google from "../../../Assets/Images/google.png";
-import Gmail from "../../../Assets/Images/gmail.png";
+import Signin_img from "../../../assets/Images/Signin_img.png";
+import Google from "../../../assets/Images/google.png";
+import Gmail from "../../../assets/Images/gmail.png";
 
 const Signin = () => {
   return (
