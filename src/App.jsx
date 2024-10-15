@@ -18,6 +18,7 @@ import Newarrivals from "./components/feature/Newarrivals/Newarrivals";
 import Logos from "./components/feature/Logos/Logos";
 
 import Peaky from "./components/feature/Peaky/Peaky";
+import Costumersays from "./components/feature/Costumersays/Costumersays";
 
 
 
@@ -28,6 +29,7 @@ const App = () => {
       <Logos />
       <DealSection />
       <Newarrivals />
+      <Costumersays />
       <Peaky />
       <Router>
       <Routes>
