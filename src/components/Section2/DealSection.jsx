@@ -1,6 +1,6 @@
 import React from 'react';
 import Slider from '../Section2/Slider';
-import Timer from '../Section2/Timer'; // Ensure this is the correct path
+import Timer from '../Section2/Timer'; 
 import styles from './DealSection.module.scss';
 
 import image1 from '../../assets/images/images (2).png';
@@ -21,7 +21,7 @@ const DealSection = () => {
         <button className={styles.buyNowBtn}>Buy Now</button>
         <p className={styles.hurryText}>Hurry, Before It's Too Late!</p>
         <div className={styles.timer}>
-          <Timer /> {/* Include the Timer component here */}
+          <Timer /> 
         </div>
       </div>
       <div className={styles.dealsRight}>

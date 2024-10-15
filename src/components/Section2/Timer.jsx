@@ -1,13 +1,12 @@
-import React, { useReducer, useEffect } from 'react';
-import styles from './Timer.module.scss';
+import React, { useReducer, useEffect } from "react";
+import styles from "./Timer.module.scss";
 
 const initialState = {
   days: 10,
   hours: 6,
-  minutes: 23,  // Start with 1 minute for testing
+  minutes: 23,
   seconds: 56,
 };
-
 
 const reducer = (state) => {
   if (state.seconds > 0) {
@@ -20,7 +19,13 @@ const reducer = (state) => {
     return { ...state, seconds: 59, minutes: 59, hours: state.hours - 1 };
   }
   if (state.days > 0) {
-    return { ...state, seconds: 59, minutes: 59, hours: 23, days: state.days - 1 };
+    return {
+      ...state,
+      seconds: 59,
+      minutes: 59,
+      hours: 23,
+      days: state.days - 1,
+    };
   }
   return state;
 };
@@ -35,12 +40,7 @@ const Timer = () => {
     return () => clearInterval(interval);
   }, []);
 
-  const timerItems = [
-    state.days,
-    state.hours,
-    state.minutes,
-    state.seconds,
-  ];
+  const timerItems = [state.days, state.hours, state.minutes, state.seconds];
 
   return (
     <div className={styles.timerContainer}>
