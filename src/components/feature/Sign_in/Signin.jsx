@@ -16,11 +16,11 @@ const Signin = () => {
           <div className="signInBlock">
             <p>Sign In To FASCO</p>
             <div className="buttons">
-              <button>
+              <button className="button">
                 <img src={Google} alt="" />
                 Sign up with Google
               </button>
-              <button>
+              <button className="button">
                 <img src={Gmail} alt="" />
                 Sign up with Email
               </button>
