@@ -15,13 +15,18 @@ import Signin from "./components/feature/Sign_in/Signin";
 import "./App.scss";
 import DealSection from "./components/Section2/DealSection";
 import Newarrivals from "./components/feature/Newarrivals/Newarrivals";
+
+import Logos from "./components/feature/Logos/Logos";
+
 import Peaky from "./components/feature/Peaky/Peaky";
+
 
 
 const App = () => {
   return (
     <div className="App">
       <Navbar />
+      <Logos />
       <DealSection />
       <Newarrivals />
       <Peaky />
