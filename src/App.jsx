@@ -10,12 +10,13 @@ import FAQ from "./components/Footer/Pages/FAQ";
 import Error404 from "./components/Footer/Pages/Error404";
 import Navbar from "./components/feature/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
-import Signin from "./components/feature/Sign_in/Signin";
+
 
 import "./App.scss";
 import DealSection from "./components/Section2/DealSection";
 import Newarrivals from "./components/feature/Newarrivals/Newarrivals";
 import Peaky from "./components/feature/Peaky/Peaky";
+import Features from "./components/feature/Features/Features";
 
 
 const App = () => {
@@ -25,6 +26,7 @@ const App = () => {
       <DealSection />
       <Newarrivals />
       <Peaky />
+      <Features />
       <Router>
         <Routes>
           <Route path="/support-center" element={<SupportCenter />} />
