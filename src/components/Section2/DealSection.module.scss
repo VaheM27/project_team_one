@@ -1,0 +1,64 @@
+.dealsSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 20px;
+}
+.container{
+  max-width: 1280px;
+}
+.dealsLeft {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.dealsTitle {
+  font-family: 'Volkhov', serif;
+  font-size: 46px;
+  font-weight: 400;
+  line-height: 59.34px;
+  text-align: left;
+  color: #484848;
+}
+
+.dealsDescription {
+  
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+color: #8A8A8A;  
+  margin: 10px 0;
+  max-width: 436px;
+}
+
+.buyNowBtn {
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 20px 70px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: Poppins;
+font-size: 16px;
+font-weight: 400;
+line-height: 16px;
+text-align: center;
+
+}
+
+.hurryText {
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 42px;
+  text-align: left;
+  margin: 15px 0;
+}
+
+.timer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
