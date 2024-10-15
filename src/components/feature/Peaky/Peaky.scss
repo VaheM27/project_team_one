@@ -1,0 +1,92 @@
+.peakyMain {
+    display: flex;
+    background-color: #DADADA;
+    margin-top: 13 0px;
+
+
+    .about_peaky {
+        padding: 60px 0 60px 29px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: #767676;
+            max-width: 460px;
+        }
+
+        h1 {
+            font-size: 46px;
+            font-weight: 600;
+            line-height: 59.34px;
+            font-family: Volkhov;
+            color: #484848;
+        }
+
+        span {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 24px;
+            color: black;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .size {
+            display: flex;
+            align-items: center;
+            column-gap: 15px;
+
+            .size_m {
+                padding: 6px 20px;
+                background-color: white;
+                border-radius: 10px;
+                color: black;
+                outline: none;
+                border: none;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 16px;
+            }
+        }
+
+        .price {
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 42px;
+            color: black;
+
+            span {
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 36px;
+                text-decoration: none;
+            }
+        }
+
+        .buy_now {
+            max-width: 207px;
+            width: 100%;
+            background-color: black;
+            padding: 20px 70px;
+            border-radius: 10px;
+            color: white;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 16px;
+            border: none;
+            outline: none;
+        }
+
+        .buy_now:hover {
+            background-color: white;
+            color: black;
+            border: 1.5px solid black;
+            transition: all 500ms;
+        }
+    }
+}

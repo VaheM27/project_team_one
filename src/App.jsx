@@ -15,6 +15,7 @@ import Signin from "./components/feature/Sign_in/Signin";
 import "./App.scss";
 import DealSection from "./components/Section2/DealSection";
 import Newarrivals from "./components/feature/Newarrivals/Newarrivals";
+import Peaky from "./components/feature/Peaky/Peaky";
 
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
       <Navbar />
       <DealSection />
       <Newarrivals />
+      <Peaky />
       <Router>
       <Routes>
         {/* <Route path="/" element={<Navbar/>} /> */}
