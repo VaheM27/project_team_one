@@ -10,7 +10,6 @@ import FAQ from "../src/Pages/FAQ";
 import Error404 from "../src/Pages/Error404";
 import Navbar from "./components/feature/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
-import Signin from "./components/feature/Sign_in/Signin";
 
 import "./App.scss";
 import DealSection from "./components/Section2/DealSection";
