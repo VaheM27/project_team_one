@@ -16,6 +16,9 @@ import DealSection from "./components/Section2/DealSection";
 import Newarrivals from "./components/feature/Newarrivals/Newarrivals";
 import Logos from "./components/feature/Logos/Logos";
 import Peaky from "./components/feature/Peaky/Peaky";
+import Features from "./components/feature/Features/Features"
+import Costumersays from "./components/feature/Costumersays/Costumersays";
+
 
 import "./App.scss";
 
@@ -29,7 +32,7 @@ const App = () => {
       <Newarrivals />
       <Costumersays />
       <Peaky />
-      <Features />
+      <Features/>
       <Router>
         <Routes>
           {/* <Route path="/" element={<Navbar/>} /> */}
