@@ -3,11 +3,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 72px;
+    padding-top: 72px;
 
     .features_box {
         display: flex;
         align-items: center;
+        column-gap: 13px;
 
         h3 {
             font-size: 20px;
