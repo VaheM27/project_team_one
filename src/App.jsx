@@ -19,6 +19,7 @@ import Newarrivals from "./components/feature/Newarrivals/Newarrivals";
 import Logos from "./components/feature/Logos/Logos";
 
 import Peaky from "./components/feature/Peaky/Peaky";
+import Costumersays from "./components/feature/Costumersays/Costumersays";
 
 
 
@@ -34,18 +35,18 @@ const App = () => {
       <Peaky />
       <Features />
       <Router>
-      <Routes>
-        {/* <Route path="/" element={<Navbar/>} /> */}
-        <Route path="/support-center" element={<SupportCenter />} />
-        <Route path="/invoicing" element={<Invoicing />} />
-        <Route path="/contract" element={<Contract />} />
-        <Route path="/careers" element={<Careers />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/faq" element={<FAQ />} />
-        <Route path="*" element={<Error404 />} />
-      </Routes>
-      <Footer />
-    </Router>
+        <Routes>
+          {/* <Route path="/" element={<Navbar/>} /> */}
+          <Route path="/support-center" element={<SupportCenter />} />
+          <Route path="/invoicing" element={<Invoicing />} />
+          <Route path="/contract" element={<Contract />} />
+          <Route path="/careers" element={<Careers />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/faq" element={<FAQ />} />
+          <Route path="*" element={<Error404 />} />
+        </Routes>
+        <Footer />
+      </Router>
     </div>
   );
 };
