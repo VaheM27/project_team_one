@@ -3,7 +3,6 @@ import FeaturesData from './FeaturesData'
 
 import styles from "./Features.module.scss"
 import "./Features.module.scss"
-
 const Features = () => {
     return (
         <div className={`container ${styles.features_main}`}>
