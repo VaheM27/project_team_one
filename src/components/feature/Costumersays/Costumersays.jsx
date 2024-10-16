@@ -18,4 +18,4 @@ const Costumersays = () => {
   );
 };
 
-export default Costumersays;
+export default Costumersays
