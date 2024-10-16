@@ -33,7 +33,6 @@ const App = () => {
       <Newarrivals />
       <Costumersays />
       <Peaky />
-      <Features />
       <FollowUs />
       <Router>
         <Routes>
