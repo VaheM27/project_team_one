@@ -17,7 +17,7 @@ import Newarrivals from "./components/feature/Newarrivals/Newarrivals";
 import Logos from "./components/feature/Logos/Logos";
 import Peaky from "./components/feature/Peaky/Peaky";
 import Costumersays from "./components/feature/Costumersays/Costumersays";
-import Features from "./components/feature/Features/Features";
+
 import FollowUs from "./components/feature/FollowUs/FollowUs";
 
 
@@ -34,7 +34,7 @@ const App = () => {
       <Newarrivals />
       <Costumersays />
       <Peaky />
-      <Features />
+      <Features/>
       <FollowUs />
       <Router>
         <Routes>
