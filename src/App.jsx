@@ -19,6 +19,7 @@ import Peaky from "./components/feature/Peaky/Peaky";
 
 import "./App.scss";
 
+
 const App = () => {
   return (
     <div className="App">
@@ -26,7 +27,9 @@ const App = () => {
       <Logos />
       <DealSection />
       <Newarrivals />
+      <Costumersays />
       <Peaky />
+      <Features />
       <Router>
         <Routes>
           {/* <Route path="/" element={<Navbar/>} /> */}
