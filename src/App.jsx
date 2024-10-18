@@ -11,7 +11,6 @@ import Error404 from "../src/Pages/Error404";
 import Navbar from "./components/feature/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 
-
 import DealSection from "./components/Section2/DealSection";
 import Newarrivals from "./components/feature/Newarrivals/Newarrivals";
 import Logos from "./components/feature/Logos/Logos";
@@ -20,10 +19,7 @@ import Costumersays from "./components/feature/Costumersays/Costumersays";
 import Features from "./components/feature/Features/Features";
 import FollowUs from "./components/feature/FollowUs/FollowUs";
 
-
-
 import "./App.scss";
-
 
 const App = () => {
   return (
@@ -34,6 +30,7 @@ const App = () => {
       <Newarrivals />
       <Costumersays />
       <Peaky />
+      <Features />
       <FollowUs />
       <Router>
         <Routes>
