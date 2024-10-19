@@ -21,6 +21,7 @@ import LastSec from "./components/LastSec/LastSec";
 import Footer from "./components/Footer/Footer";
 import Peaky from "./components/feature/Peaky/Peaky";
 import Costumersays from "./components/feature/Costumersays/Costumersays";
+import Features from "./components/feature/Features/Features";
 
 
 const App = () => {
@@ -30,7 +31,6 @@ const App = () => {
       <Logos />
       <DealSection />
       <Newarrivals />
-
       <Peaky />
       <Features />
       <FollowUs />
