@@ -22,6 +22,7 @@ import Footer from "./components/Footer/Footer";
 import Peaky from "./components/feature/Peaky/Peaky";
 import Costumersays from "./components/feature/Costumersays/Costumersays";
 
+
 const App = () => {
   return (
     <div className="App">
@@ -29,7 +30,9 @@ const App = () => {
       <Logos />
       <DealSection />
       <Newarrivals />
+
       <Peaky />
+      <Features />
       <FollowUs />
       <Costumersays />
       <Router>
