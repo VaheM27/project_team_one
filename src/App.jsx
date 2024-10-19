@@ -20,6 +20,7 @@ import Error404 from "./Pages/Error404";
 import LastSec from "./components/LastSec/LastSec";
 import Footer from "./components/Footer/Footer";
 import Peaky from "./components/feature/Peaky/Peaky";
+import Costumersays from "./components/feature/Costumersays/Costumersays";
 
 const App = () => {
   return (
@@ -28,8 +29,9 @@ const App = () => {
       <Logos />
       <DealSection />
       <Newarrivals />
-
+      <Peaky />
       <FollowUs />
+      <Costumersays />
       <Router>
         <Routes>
           {/* <Route path="/" element={<Navbar/>} /> */}
