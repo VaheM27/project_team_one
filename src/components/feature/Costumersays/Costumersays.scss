@@ -1,24 +1,113 @@
-.costumer {
-  padding: 120px 250px;
-    img{
-        width: 250px;
-        height: 250px;
-    }
-  .text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    row-gap: 20px;
+.costumersays-section {
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .costumer {
+    text-align: center;
+    margin-bottom: 20px;
+
     .first {
-      font-size: 46px;
-      font-weight: 400;
+      font-size: 24px;
+      font-weight: bold;
     }
 
     .sec {
-      color: rgba(138, 138, 138, 1);
-      font-weight: 400;
       font-size: 16px;
+      color: #666;
+    }
+  }
+
+  .slider {
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+    .slider-button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      font-size: 24px;
+      padding: 10px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 10;
+
+      &.left {
+        left: 10px;
+      }
+
+      &.right {
+        right: 10px;
+      }
+    }
+
+    .testimonial-container {
+      display: flex;
+      transition: transform 0.5s ease;
+      width: calc(400px * 5);
+    }
+
+    .testimonial-item {
+      width: 700px;
+      margin: 0 10px;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      background: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      position: relative;
+
+      &.active {
+        transform: scale(1.05);
+        z-index: 2;
+      }
+
+      .testimonial-content {
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 100px;
+          height: 100px;
+          border-radius: 10px;
+          object-fit: cover;
+          margin-right: 20px;
+        }
+
+        .testimonial-text {
+          text-align: left;
+
+          p {
+            margin: 5px 0;
+          }
+
+          .rating {
+            font-size: 20px;
+            color: gold;
+          }
+
+          hr {
+            margin: 10px 0;
+            border: 0;
+            border-top: 1px solid #ddd;
+          }
+
+          .name {
+            font-weight: bold;
+          }
+
+          .profession {
+            color: #555;
+          }
+        }
+      }
     }
   }
 }
