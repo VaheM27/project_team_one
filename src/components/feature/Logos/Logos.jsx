@@ -6,13 +6,15 @@ import "./Logos.module.scss"
 
 const Logos = () => {
     return (
-        <div className={`container ${styles.logoMain}`}>
-            {LogoData.map((item) => {
-                return (
-                    <img src={item.img} alt="logo" key={item.id}/>
-                )
-            })}
+        <div className="container">
+            <div className={`${styles.logoMain}`}>
+                {LogoData.map((item) => {
+                    return (
+                        <img src={item.img} alt="logo" key={item.id} />
+                    )
+                })}
 
+            </div>
         </div>
     )
 }

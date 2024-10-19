@@ -1,27 +1,27 @@
 .features_main {
-    width: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 72px;
+
+  .features_box {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding-top: 72px;
+    column-gap: 13px;
 
-    .features_box {
-        display: flex;
-        align-items: center;
-        column-gap: 13px;
-
-        h3 {
-            font-size: 20px;
-            font-weight: 500;
-            line-height: 30px;
-            color: #484848;
-        }
-
-        p {
-            font-size: 16px;
-            font-weight: 500;
-            line-height: 30px;
-            color: #484848;
-        }
+    h3 {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 30px;
+      color: #484848;
     }
+
+    p {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 30px;
+      color: #484848;
+    }
+  }
 }
