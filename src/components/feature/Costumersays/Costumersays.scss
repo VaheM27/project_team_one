@@ -1,0 +1,24 @@
+.costumer {
+  padding: 120px 250px;
+    img{
+        width: 250px;
+        height: 250px;
+    }
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+    .first {
+      font-size: 46px;
+      font-weight: 400;
+    }
+
+    .sec {
+      color: rgba(138, 138, 138, 1);
+      font-weight: 400;
+      font-size: 16px;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.slider-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  max-width: 1280px;
+}
+
+.slider-image {
+  width: 404px;  
+  height: 582px; 
+  object-fit: cover; 
+}
+
+.slider-button {
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}

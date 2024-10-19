@@ -1,0 +1,133 @@
+.newArrivals {
+    padding-top: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  .newArrivals_first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+
+    .new {
+      font-weight: 400;
+      font-size: 46px;
+    }
+
+    .lorem {
+      font-size: 16px;
+      font-weight: 400;
+      width: 600px;
+    }
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    margin-top: 50px;
+
+    li {
+      color: rgba(138, 138, 138, 1);
+      padding: 20px 33px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      transition-delay: 0.1s;
+    }
+
+    li:hover {
+      background-color: rgba(138, 138, 138, 1);
+      color: white;
+    }
+
+    .second {
+      background-color: black;
+      color: white;
+    }
+
+    .second:hover {
+      background-color: black;
+      color: white;
+    }
+  }
+
+  .data {
+    margin-top: 65px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    .post {
+      display: flex;
+      flex-direction: column;
+      padding: 25px 20px 30px 20px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+
+      img {
+        width: 330px;
+        height: 244px;
+        border-radius: 10px;
+      }
+
+      .littleDiv {
+        display: flex;
+        column-gap: 125px;
+
+        p {
+          font-size: 20px;
+          font-weight: 500;
+        }
+
+        img {
+          width: 95px;
+          height: 20px;
+        }
+      }
+
+      .views {
+        font-size: 12px;
+        font-weight: 500;
+      }
+
+      .lastDiv {
+        display: flex;
+        column-gap: 160px;
+
+        .price {
+          font-size: 24px;
+          font-weight: 500;
+        }
+
+        .posit {
+          font-size: 12px;
+          font-weight: 400;
+          text-align: right;
+          color: red;
+        }
+      }
+    }
+
+    .post:hover {
+        transform: scale(1.1)
+    }
+  }
+
+  button {
+    border-radius: 10px;
+    background-color: black;
+    cursor: pointer;
+    padding: 20px 60px;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    transition: transform 0.3s ease;
+  }
+
+  button:hover {
+    transform: scale(0.9);
+  }
+}
