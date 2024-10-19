@@ -11,7 +11,7 @@ nav {
 
     }
 
-    .nav-items {
+    .nav_items {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -27,6 +27,17 @@ nav {
             font-weight: 400;
             line-height: 24px;
             color: #484848;
+
+            li {
+                &:hover {
+                    transform: scale(1.3);
+                    padding: 5px 10px;
+                    background-color: #b9b7b7;
+                    color: white;
+                    border-radius: 5px;
+                    transition: all .5s;
+                }
+            }
         }
 
         button {
@@ -38,16 +49,22 @@ nav {
             font-weight: 400;
             line-height: 16px;
             text-align: center;
-            color: white;
+            color: white;   
             background-color: black;
             border: none;
             outline: none;
+
+            &:hover {
+                background-color: rgba($color: #b9b7b7, $alpha: .7);
+                color: black;
+                transition: all .4s;
+            }
         }
-    }
+    } 
 
 }
 
-.nav-sec {
+.nav_sec {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -74,13 +91,13 @@ nav {
 
     }
 
-    .nav-sec-info {
+    .nav_sec_info {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         height: 756px;
 
-        .nav-sec-info-texts {
+        .nav_sec_info_texts {
             display: flex;
             flex-direction: column;
             align-items: center;
