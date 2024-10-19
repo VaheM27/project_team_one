@@ -10,7 +10,7 @@ import FAQ from "./components/Footer/Pages/FAQ";
 import Error404 from "./components/Footer/Pages/Error404";
 import Navbar from "./components/feature/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
-import Signin from "./components/feature/Sign_in/Signin";
+// import Signin from "./components/feature/Sign_in/Signin";
 
 import "./App.scss";
 
@@ -18,7 +18,7 @@ const App = () => {
   return (
     <div className="App">
       <Navbar />
-      <Signin />
+      {/* <Signin /> */}
       <Router>
         <Routes>
           <Route path="/support-center" element={<SupportCenter />} />
