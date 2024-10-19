@@ -1,17 +1,20 @@
 import React from 'react'
 import LogoData from './LogoData'
 
-import "./Logos.scss"
+import styles from "./Logos.module.scss"
+import "./Logos.module.scss"
 
 const Logos = () => {
     return (
-        <div className='container logoMain'>
-            {LogoData.map((item) => {
-                return (
-                    <img src={item.img} alt="logo" />
-                )
-            })}
+        <div className="container">
+            <div className={`${styles.logoMain}`}>
+                {LogoData.map((item) => {
+                    return (
+                        <img src={item.img} alt="logo" key={item.id} />
+                    )
+                })}
 
+            </div>
         </div>
     )
 }
