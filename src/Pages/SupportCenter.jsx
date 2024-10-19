@@ -8,4 +8,4 @@ const SupportCenter = () => {
   );
 };
 
-export default SupportCenter;
+export default SupportCenter

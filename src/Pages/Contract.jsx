@@ -8,4 +8,4 @@ const Contract = () => {
   );
 };
 
-export default Contract;
+export default Contract
