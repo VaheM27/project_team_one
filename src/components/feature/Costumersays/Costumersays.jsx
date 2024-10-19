@@ -1,70 +1,50 @@
-import React, { useState } from "react";
-import { data, heading, subheading } from "../../../../src/Constants/Data";
+import React, { useReducer } from "react";
+import { initialState, reducer } from "./reducer";
+import Slider from "react-slick";
 
 import "./Costumersays.scss";
 
-const duplicatedTestimonials = [data[data.length - 1], ...data, data[0]];
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const Costumersays = () => {
-  const [currentIndex, setCurrentIndex] = useState(1);
-
-  const nextTestimonial = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === duplicatedTestimonials.length - 1 ? 1 : prevIndex + 1
-    );
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 1000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    autoplay: true,
+    centerMode: true,
+    centerPadding: "60px",
+    pauseOnHover: true,
+    autoplaySpeed: 1500,
+    draggable: true,
   };
 
-  const prevTestimonial = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? duplicatedTestimonials.length - 2 : prevIndex - 1
-    );
-  };
+  const [state, dispatch] = useReducer(reducer, initialState);
 
   return (
-    <div className="costumersays-section">
-      <div className="container">
-        <div className="costumer">
-          <div className="text">
-            <p className="first">{heading}</p>
-            <p className="sec">{subheading}</p>
-          </div>
-        </div>
-        <div className="slider">
-          <button onClick={prevTestimonial} className="slider-button left">
-            {"<"}
-          </button>
-          <div
-            className="testimonial-container"
-            style={{
-              transform: `translateX(-${(currentIndex - 1) * 400}px)`,
-              transition: "transform 0.5s ease",
-            }}
-          >
-            {duplicatedTestimonials.map((data) => (
-              <div
-                key={data.id}
-                className={`testimonial-item ${
-                  currentIndex === data.id ? "active" : ""
-                }`}
-              >
-                <div className="testimonial-content">
-                  <img src={data.image} alt={data.name} />
-                  <div className="testimonial-text">
-                    <p>{data.quote}</p>
-                    <div className="rating">{"⭐".repeat(data.rating)}</div>
-                    <hr />
-                    <p className="name">{data.name}</p>
-                    <p className="profession">{data.profession}</p>
-                  </div>
-                </div>
+    <div className="slider-container">
+      <Slider {...settings}>
+        {state.images.map((item) => {
+          return (
+            <div key={item.id} className="mainDiv">
+              <div className="leftSide">
+                <img src={item.image} alt="" />
               </div>
-            ))}
-          </div>
-          <button onClick={nextTestimonial} className="slider-button right">
-            {">"}
-          </button>
-        </div>
-      </div>
+              <div className="rightSide">
+                <p className="quote">{item.quote}</p>
+                <img src={item.rating} alt="" className="rating"/>
+                <hr />
+                <p className="name">{item.name}</p>
+                <p className="prof"> {item.profession}</p>
+              </div>
+            </div>
+          );
+        })}
+      </Slider>
     </div>
   );
 };

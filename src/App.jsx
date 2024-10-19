@@ -20,7 +20,7 @@ import Peaky from "./components/feature/Peaky/Peaky";
 import Costumersays from "./components/feature/Costumersays/Costumersays";
 import Features from "./components/feature/Features/Features";
 import FollowUs from "./components/feature/FollowUs/FollowUs";
-import { data, heading, subheading } from "./Constants/Data"; 
+
 
 
 import "./App.scss";
@@ -32,8 +32,9 @@ const App = () => {
       <Logos />
       <DealSection />
       <Newarrivals />
-      <Costumersays heading={heading} subheading={subheading} data={data} />
+      <Costumersays/>
       <Peaky />
+      <Features />
       <FollowUs />
       <Router>
         <Routes>
