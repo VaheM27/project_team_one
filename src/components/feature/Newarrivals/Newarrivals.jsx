@@ -44,4 +44,4 @@ const Newarrivals = () => {
   );
 };
 
-export default Newarrivals;
+export default Newarrivals

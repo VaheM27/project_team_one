@@ -8,4 +8,4 @@ const Invoicing = () => {
   );
 };
 
-export default Invoicing;
+export default Invoicing

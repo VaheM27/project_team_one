@@ -60,4 +60,4 @@ function LastSec() {
   );
 }
 
-export default LastSec;
+export default LastSec

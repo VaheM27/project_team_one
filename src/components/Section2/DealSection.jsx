@@ -38,4 +38,4 @@ const DealSection = () => {
   );
 };
 
-export default DealSection;
+export default DealSection
