@@ -12,7 +12,7 @@ const images = [image1, image2, image3];
 const DealSection = () => {
   return (
     <div className="container">
-      <div className={styles.dealsSection}>
+      <div className={styles.dealsSection} id='deals'>
         <div className={styles.dealsLeft}>
           <h2 className={styles.dealsTitle}>Deals Of The Month</h2>
           <p className={styles.dealsDescription}>

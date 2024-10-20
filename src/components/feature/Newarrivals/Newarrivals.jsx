@@ -4,9 +4,9 @@ import NewData from "./NewData";
 const Newarrivals = () => {
   return (
     <div className="container">
-      <div className="newArrivals">
+      <div className="newArrivals" >
         <div className="newArrivals_first">
-          <p className="new">New Arrivals</p>
+          <p className="new" id="newArrivals">New Arrivals</p>
           <p className="lorem">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
             Repellendus saepe, ducimus recusandae reprehenderit iure dolores

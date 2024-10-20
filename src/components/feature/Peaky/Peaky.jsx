@@ -11,7 +11,7 @@ const Peaky = () => {
         console.log(changeColor)
     }
     return (
-        <div className='peakyMain'>
+        <div className='peakyMain' id='packages'>
             <img src={peaky} alt="peaky" />
             <div className='about_peaky'>
                 <p>Women Collection</p>

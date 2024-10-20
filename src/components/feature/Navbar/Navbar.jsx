@@ -8,8 +8,12 @@ import twoGirl from "../../../assets/images/images (2).png"
 import recycleBin from "../../../assets/images/recycleBin.png"
 import scroll from "../../../assets/images/scroll.png"
 
+
+
 import styles from "./Navbar.module.scss"
 import "./Navbar.module.scss"
+import navItems from '../Navbar/navitems'
+
 
 const Navbar = () => {
   return (
@@ -19,11 +23,11 @@ const Navbar = () => {
           <img src={Logo} alt="Logo" />
           <div className={styles.nav_items}>
             <ul>
-              <li>Home</li>
-              <li>Deals</li>
-              <li>New Arrivals</li>
-              <li>Packages</li>
-              <li>Sign In</li>
+              {navItems.map ((item) => {
+                return (
+                  <li key={item.id}><a href={item.id}>{item.navName}</a></li>
+                )
+              })}
             </ul>
             <button>Sign Up</button>
           </div>
