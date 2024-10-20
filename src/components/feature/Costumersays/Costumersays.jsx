@@ -26,27 +26,39 @@ const Costumersays = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   return (
-    <div className="slider-container">
-      <Slider {...settings}>
-        {state.images.map((item) => {
-          return (
-            <div key={item.id} className="mainDiv">
-              <div className="leftSide">
-                <img src={item.image} alt="" />
+    <div>
+      <div className="costumer">
+        <div className="text">
+          <p className="first">This Is What Our Customers Say</p>
+          <p className="sec">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque
+            duis
+          </p>
+        </div>
+      </div>
+
+      <div className="slider-container">
+        <Slider {...settings}>
+          {state.images.map((item) => {
+            return (
+              <div key={item.id} className="mainDiv">
+                <div className="leftSide">
+                  <img src={item.image} alt="" />
+                </div>
+                <div className="rightSide">
+                  <p className="quote">{item.quote}</p>
+                  <img src={item.rating} alt="" className="rating" />
+                  <hr />
+                  <p className="name">{item.name}</p>
+                  <p className="prof"> {item.profession}</p>
+                </div>
               </div>
-              <div className="rightSide">
-                <p className="quote">{item.quote}</p>
-                <img src={item.rating} alt="" className="rating"/>
-                <hr />
-                <p className="name">{item.name}</p>
-                <p className="prof"> {item.profession}</p>
-              </div>
-            </div>
-          );
-        })}
-      </Slider>
+            );
+          })}
+        </Slider>
+      </div>
     </div>
   );
 };
 
-export default Costumersays
+export default Costumersays;
