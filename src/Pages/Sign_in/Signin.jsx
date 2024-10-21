@@ -25,7 +25,6 @@ const Signin = () => {
       password: "",
     });
   };
-
   return (
     <div className="container">
       <div className="signInBox">
@@ -45,6 +44,11 @@ const Signin = () => {
                 <img src={Gmail} alt="" />
                 Sign up with Email
               </button>
+            </div>
+            <div className='orDiv'>
+              <hr />
+              <p className='or'>Or</p>
+              <hr />
             </div>
             <form className="inputs" onSubmit={handleSubmit}>
               <input

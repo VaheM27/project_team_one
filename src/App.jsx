@@ -6,6 +6,7 @@ import ROUTES from "./Routes";
 import Layout from "./Layout/Layout";
 import Home from "./Pages/Home/Home";
 import Signin from "./Pages/Sign_in/Signin";
+import Signup from "./Pages/Sign_up/Signup";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Route path={ROUTES.HOME} element={<Layout />}>
           <Route index element={<Home />} />
           <Route path={ROUTES.SIGN_IN} element={<Signin />}/>
+          <Route path={ROUTES.SIGN_UP} element={<Signup />}/>
         </Route>
       </Routes>
     </div>
