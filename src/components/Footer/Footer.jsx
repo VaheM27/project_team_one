@@ -12,22 +12,22 @@ const Footer = () => {
           <div className="nav-links">
             <ul>
               <li>
-                <Link to="/support-center">Support Center</Link>
+              Support Center
               </li>
               <li>
-                <Link to="/invoicing">Invoicing</Link>
+                Invoicing
               </li>
               <li>
-                <Link to="/contract">Contract</Link>
+                Contract
               </li>
               <li>
-                <Link to="/careers">Careers</Link>
+                Careers
               </li>
               <li>
-                <Link to="/blog">Blog</Link>
+                Blog
               </li>
               <li>
-                <Link to="/faq">FAQ</Link>
+                FAQ
               </li>
             </ul>
           </div>
