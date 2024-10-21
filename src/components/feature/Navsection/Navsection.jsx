@@ -22,7 +22,11 @@ const Navsection = () => {
             <p className={styles.ultimate}>ULTIMATE</p>
             <p className={styles.sale}>SALE</p>
             <p className={styles.newColect}>NEW COLLECTION</p>
-            <button ><Link to={ROUTES.SHOP} className="uniqeClassOne">SHOP NOW</Link></button>
+           
+              <Link to={ROUTES.SHOP} className="uniqeClassOne">
+                <button>Shop Now</button>
+              </Link>
+          
           </div>
           <img src={twoGirl} alt="nav-sec-info-img" />
         </div>
@@ -36,7 +40,13 @@ const Navsection = () => {
       </section>
 
       <div className={styles.absolute_div}>
-        <img src={recycleBin} alt="recycleBin" className={styles.recycleBin} />
+        <Link to={ROUTES.SHOP} className="uniqeClassOne">
+          <img
+            src={recycleBin}
+            alt="recycleBin"
+            className={styles.recycleBin}
+          />
+        </Link>
 
         <a href="#nav">
           <img src={scroll} alt="scroll" />

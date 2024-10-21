@@ -28,7 +28,7 @@ const Navbar = () => {
               })}
               <li><NavLink to={ROUTES.SIGN_IN}>Sign in</NavLink></li>
             </ul>
-            <button><NavLink to={ROUTES.SIGN_UP}>Sign Up</NavLink></button>
+            <NavLink to={ROUTES.SIGN_UP}><button>Sign Up</button></NavLink>
           </div>
         </nav>
 
