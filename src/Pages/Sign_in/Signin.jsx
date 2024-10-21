@@ -1,10 +1,31 @@
-import Signin_img from '../../assets/images/Signin_img.png'
-import Google from '../../assets/images/google.png'
-import Gmail from '../../assets/images/gmail.png';
+import Signin_img from "../../assets/images/Signin_img.png";
+import Google from "../../assets/images/google.png";
+import Gmail from "../../assets/images/gmail.png";
 
 import "./Signin.scss";
+import { useState } from "react";
 
 const Signin = () => {
+  const [email, setEmail] = useState({
+    email: "",
+    password: "",
+  });
+
+  const handleChange = (e) => {
+    setEmail({
+      ...email,
+      [e.target.name]: e.target.value,
+    });
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    setEmail({
+      email: "",
+      password: "",
+    });
+  };
+
   return (
     <div className="container">
       <div className="signInBox">
@@ -25,14 +46,28 @@ const Signin = () => {
                 Sign up with Email
               </button>
             </div>
-            <div className="inputs">
-              <input type="text" placeholder="Email" />
-              <input type="password" placeholder="Password" />
-            </div>
-            <div className="buttonsBig">
-              <button className="firstBut">Sign In</button>
-              <button className="secBut">Register Now</button>
-            </div>
+            <form className="inputs" onSubmit={handleSubmit}>
+              <input
+                type="email"
+                name="email"
+                value={email.email}
+                onChange={handleChange}
+                required
+                placeholder="Email"
+              />
+              <input
+                type="password"
+                name="password"
+                value={email.password}
+                onChange={handleChange}
+                placeholder="Password"
+                required
+              />
+              <div className="buttonsBig">
+                <button className="firstBut">Sign In</button>
+                <button className="secBut">Register Now</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
@@ -40,4 +75,4 @@ const Signin = () => {
   );
 };
 
-export default Signin
+export default Signin;
