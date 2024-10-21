@@ -20,7 +20,7 @@ const Navbar = () => {
           <img src={Logo} alt="Logo" />
           <div className={styles.nav_items}>
             <ul>
-            <li><NavLink to='/'>Home</NavLink></li>
+            <li><NavLink to={ROUTES.HOME}>Home</NavLink></li>
               {navItems.map ((item) => {
                 return (
                   <li key={item.id}><a href={item.id}>{item.navName}</a></li>

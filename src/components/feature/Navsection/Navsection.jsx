@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import grayShirt from "../../../assets/images/image 2 28.png";
 import brownShirt from "../../../assets/images/image 227.png";
 import fourGirl from "../../../assets/images/images (1).png";
@@ -6,6 +7,7 @@ import recycleBin from "../../../assets/images/recycleBin.png";
 import scroll from "../../../assets/images/scroll.png";
 
 import styles from "./Navsection.module.scss";
+import ROUTES from "../../../Routes";
 
 const Navsection = () => {
   return (
@@ -20,7 +22,7 @@ const Navsection = () => {
             <p className={styles.ultimate}>ULTIMATE</p>
             <p className={styles.sale}>SALE</p>
             <p className={styles.newColect}>NEW COLLECTION</p>
-            <button>SHOP NOW</button>
+            <button ><Link to={ROUTES.SHOP} className="uniqeClassOne">SHOP NOW</Link></button>
           </div>
           <img src={twoGirl} alt="nav-sec-info-img" />
         </div>
