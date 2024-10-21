@@ -6,7 +6,7 @@ const Newarrivals = () => {
     <div className="container">
       <div className="newArrivals" >
         <div className="newArrivals_first">
-          <p className="new" id="newArrivals">New Arrivals</p>
+          <p className="new">New Arrivals</p>
           <p className="lorem">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
             Repellendus saepe, ducimus recusandae reprehenderit iure dolores
@@ -38,7 +38,7 @@ const Newarrivals = () => {
             );
           })}
         </div>
-        <button>View More</button>
+        <button  id='packages'>View More</button>
       </div>
     </div>
   );

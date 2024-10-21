@@ -1,6 +1,7 @@
 const navItems = [
     {
       navName: "Home",
+      id: '#nav'
     },
     {
       navName: "Deals",

@@ -10,7 +10,7 @@ const Logos = () => {
             <div className={`${styles.logoMain}`}>
                 {LogoData.map((item) => {
                     return (
-                        <img src={item.img} alt="logo" key={item.id} />
+                        <img src={item.img} alt="logo" key={item.id} id='deals'/>
                     )
                 })}
 

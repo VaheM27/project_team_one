@@ -22,12 +22,14 @@ import Footer from "./components/Footer/Footer";
 import Peaky from "./components/feature/Peaky/Peaky";
 import Costumersays from "./components/feature/Costumersays/Costumersays";
 import Features from "./components/feature/Features/Features";
+import Navsection from "./components/feature/Navsection/Navsection";
 
 
 const App = () => {
   return (
     <div className="App">
       <Navbar />
+      <Navsection />
       <Logos />
       <DealSection />
       <Newarrivals />
