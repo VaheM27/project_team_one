@@ -1,6 +1,6 @@
-import Signin_img from "../../../assets/images/Signin_img.png";
-import Google from "../../../assets/images/google.png";
-import Gmail from "../../../assets/images/gmail.png";
+import Signin_img from '../../assets/images/Signin_img.png'
+import Google from '../../assets/images/google.png'
+import Gmail from '../../assets/images/gmail.png';
 
 import "./Signin.scss";
 
@@ -40,4 +40,4 @@ const Signin = () => {
   );
 };
 
-export default Signin;
+export default Signin
