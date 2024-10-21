@@ -9,6 +9,7 @@ import styles from "./Navbar.module.scss"
 import "./Navbar.module.scss"
 import navItems from '../Navbar/navitems'
 import { NavLink } from 'react-router-dom';
+import ROUTES from '../../../Routes';
 
 
 const Navbar = () => {
@@ -25,9 +26,9 @@ const Navbar = () => {
                   <li key={item.id}><a href={item.id}>{item.navName}</a></li>
                 )
               })}
-              <li><NavLink to='/signin'>Sign in</NavLink></li>
+              <li><NavLink to={ROUTES.SIGN_IN}>Sign in</NavLink></li>
             </ul>
-            <button>Sign Up</button>
+            <button><NavLink to={ROUTES.SIGN_UP}>Sign Up</NavLink></button>
           </div>
         </nav>
 

@@ -3,7 +3,7 @@
   display: flex;
 
   .signInRigth {
-    padding: 0 0 187px 120px;
+    padding: 25px 0 187px 120px;
 
     p {
       font-weight: 400;
@@ -12,6 +12,11 @@
 
     .signInBlock {
       padding-top: 82px;
+
+      .create {
+        font-size: 30px;
+        font-weight: 400;
+      }
       img {
         width: 32;
         height: 32px;
@@ -67,6 +72,16 @@
         display: flex;
         flex-direction: column;
         row-gap: 30px;
+        .onlyInputs {
+          display: flex;
+          justify-content: space-between;
+
+          .inputLeft,
+          .inputRight {
+            display: flex;
+            flex-direction: column;
+          }
+        }
 
         input {
           color: rgba(157, 157, 157, 1);
@@ -117,6 +132,13 @@
           background-color: rgba(91, 134, 229, 1);
           color: rgb(255, 255, 255);
         }
+      }
+
+      .already {
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+        margin-top: 30px;
       }
     }
   }
