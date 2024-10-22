@@ -3,7 +3,6 @@ import { shopReducer, initialState } from "./shopReducer";
 
 import "./Shop.css";
 
-
 const ShopPage = () => {
   const [state, dispatch] = useReducer(shopReducer, initialState);
 
@@ -26,7 +25,6 @@ const ShopPage = () => {
     dispatch({ type: "FILTER_BY_SIZE", payload: size });
     dispatch({ type: "APPLY_FILTERS" });
   };
-  
 
   return (
     <div className="shop-page">
@@ -91,6 +89,10 @@ const ShopPage = () => {
       </aside>
 
       <div className="product-list">
+        <div className="texts">
+          <p className="fashion">Fashion</p>
+          <p className="under">Home / Fashion</p>
+        </div>
         <div className="products">
           {state.filteredProducts.length > 0 ? (
             state.filteredProducts.map((product) => (
@@ -122,7 +124,6 @@ const ShopPage = () => {
         </div>
       </div>
     </div>
-
   );
 };
 
