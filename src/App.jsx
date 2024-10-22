@@ -7,7 +7,8 @@ import Layout from "./Layout/Layout";
 import Home from "./Pages/Home/Home";
 import Signin from "./Pages/Sign_in/Signin";
 import Signup from "./Pages/Sign_up/Signup";
-import ShopPage from "./Pages/Shop/Shop";
+import ShopComponent from "./Pages/Shop/ShopComponent";
+
 
 const App = () => {
   
@@ -18,7 +19,7 @@ const App = () => {
           <Route index element={<Home />} />
           <Route path={ROUTES.SIGN_IN} element={<Signin />}/>
           <Route path={ROUTES.SIGN_UP} element={<Signup />}/>
-          <Route path={ROUTES.SHOP} element={<ShopPage />}/>
+          <Route path={ROUTES.SHOP} element={<ShopComponent /> }/>
         </Route>
       </Routes>
     </div>

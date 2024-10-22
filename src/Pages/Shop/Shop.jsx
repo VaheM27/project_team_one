@@ -3,6 +3,7 @@ import { shopReducer, initialState } from "./shopReducer";
 
 import "./Shop.css";
 
+
 const ShopPage = () => {
   const [state, dispatch] = useReducer(shopReducer, initialState);
 
@@ -121,6 +122,7 @@ const ShopPage = () => {
         </div>
       </div>
     </div>
+
   );
 };
 
