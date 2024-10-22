@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./App.scss";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import ROUTES from "./Routes";
 import Layout from "./Layout/Layout";
 import Home from "./Pages/Home/Home";
@@ -10,6 +10,7 @@ import Signup from "./Pages/Sign_up/Signup";
 import ShopPage from "./Pages/Shop/Shop";
 
 const App = () => {
+  
   return (
     <div className="App">
       <Routes>

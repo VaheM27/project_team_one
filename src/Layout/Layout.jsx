@@ -1,15 +1,19 @@
-import { Outlet } from "react-router-dom"
-import Navbar from "../components/feature/Navbar/Navbar"
-import Footer from "../components/Footer/Footer"
+import { Outlet, useLocation } from "react-router-dom";
+import Navbar from "../components/feature/Navbar/Navbar";
+import Footer from "../components/Footer/Footer";
+import Newnavbar from "../components/Newnavbar/Newnavbar";
 
 const Layout = () => {
-    return (
-        <div>
-            <Navbar />
-            <Outlet />
-            <Footer />
-        </div>
-    )
-}
+  const location = useLocation();
+  console.log(location.pathname);
 
-export default Layout
+  return (
+    <div>
+      {location.pathname === '/shop' ? <Newnavbar /> : <Navbar />}
+      <Outlet />
+      <Footer />
+    </div>
+  );
+};
+
+export default Layout;

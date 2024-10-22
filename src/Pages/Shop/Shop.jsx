@@ -25,6 +25,7 @@ const ShopPage = () => {
     dispatch({ type: "FILTER_BY_SIZE", payload: size });
     dispatch({ type: "APPLY_FILTERS" });
   };
+  
 
   return (
     <div className="shop-page">
