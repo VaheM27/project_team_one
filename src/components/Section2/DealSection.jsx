@@ -12,7 +12,7 @@ const images = [image1, image2, image3];
 const DealSection = () => {
   return (
     <div className="container">
-      <div className={styles.dealsSection}>
+      <div className={styles.dealsSection} >
         <div className={styles.dealsLeft}>
           <h2 className={styles.dealsTitle}>Deals Of The Month</h2>
           <p className={styles.dealsDescription}>
@@ -30,12 +30,13 @@ const DealSection = () => {
             <p>Sec</p>
           </div>
         </div>
-        <div className={styles.dealsRight}>
+        <div className={styles.dealsRight} >
           <Slider images={images} />
         </div>
       </div>
+      <p id="newArrivals"className={styles.text}>barev</p>
     </div>
   );
 };
 
-export default DealSection;
+export default DealSection

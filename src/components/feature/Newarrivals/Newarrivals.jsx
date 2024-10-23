@@ -4,7 +4,7 @@ import NewData from "./NewData";
 const Newarrivals = () => {
   return (
     <div className="container">
-      <div className="newArrivals">
+      <div className="newArrivals" >
         <div className="newArrivals_first">
           <p className="new">New Arrivals</p>
           <p className="lorem">
@@ -38,10 +38,10 @@ const Newarrivals = () => {
             );
           })}
         </div>
-        <button>View More</button>
+        <button  id='packages'>View More</button>
       </div>
     </div>
   );
 };
 
-export default Newarrivals;
+export default Newarrivals

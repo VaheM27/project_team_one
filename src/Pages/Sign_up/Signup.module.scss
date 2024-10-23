@@ -1,0 +1,145 @@
+.signInBox {
+  margin-top: 140px;
+  display: flex;
+
+  .signInRigth {
+    padding: 25px 0 187px 120px;
+
+    p {
+      font-weight: 400;
+      font-size: 66px;
+    }
+
+    .signInBlock {
+      padding-top: 82px;
+
+      .create {
+        font-size: 30px;
+        font-weight: 400;
+      }
+      img {
+        width: 32;
+        height: 32px;
+      }
+      p {
+        font-weight: 400;
+        font-size: 30px;
+      }
+
+      .buttons {
+        padding-top: 30px;
+        display: flex;
+        column-gap: 60px;
+
+        .button {
+          display: inline-flex;
+          padding: 8px 32px;
+          font-size: 16px;
+          font-weight: 400;
+          align-items: center;
+          column-gap: 13px;
+          border-radius: 8px;
+          border: 1px solid blue;
+          background: none;
+          transition: transform 0.3s;
+        }
+
+        .button:hover {
+          transform: translateY(-5px);
+        }
+      }
+
+      .orDiv {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding-top: 90px;
+        padding-bottom: 60px;
+        .or {
+          font-weight: 700;
+          font-size: 30px;
+          color: rgba(131, 131, 131, 1);
+        }
+        hr {
+          width: 30px;
+          background-color: rgba(131, 131, 131, 1);
+          height: 5px;
+        }
+      }
+
+      .inputs {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        .onlyInputs {
+          display: flex;
+          justify-content: space-between;
+
+          .inputLeft,
+          .inputRight {
+            display: flex;
+            flex-direction: column;
+          }
+        }
+
+        input {
+          color: rgba(157, 157, 157, 1);
+          padding: 15px 5px;
+          font-size: 16px;
+          font-weight: 400;
+          border: none;
+          border-bottom: 1px solid rgba(157, 157, 157, 1);
+        }
+      }
+
+      .buttonsBig {
+        padding-top: 45px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+
+        .firstBut {
+          background-color: black;
+          color: white;
+          font-size: 16px;
+          font-weight: 400;
+          padding: 10px 250px;
+          border-radius: 10px;
+          border: 1px solid rgba(0, 0, 0, 0.15);
+          transition: background-color 0.3s ease, color 0.3s ease;
+          transition-delay: 0.1s;
+        }
+
+        .firstBut:hover {
+          background-color: white;
+          color: rgb(0, 0, 0);
+        }
+
+        .secBut {
+          background: none;
+          color: rgba(91, 134, 229, 1);
+          font-size: 16px;
+          font-weight: 400;
+          padding: 10px 225px;
+          border-radius: 8px;
+          border: 1px solid rgba(91, 134, 229, 1);
+          transition: background-color 0.3s ease, color 0.3s ease;
+          transition-delay: 0.1s;
+        }
+
+        .secBut:hover {
+          background-color: rgba(91, 134, 229, 1);
+          color: rgb(255, 255, 255);
+        }
+      }
+
+      .already {
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+        margin-top: 30px;
+      }
+    }
+  }
+}
