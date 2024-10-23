@@ -11,31 +11,33 @@ const images = [image1, image2, image3];
 
 const DealSection = () => {
   return (
-    <div className="container">
-      <div className={styles.dealsSection} >
-        <div className={styles.dealsLeft}>
-          <h2 className={styles.dealsTitle}>Deals Of The Month</h2>
-          <p className={styles.dealsDescription}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque duis ultrices sollicitudin aliquam sem. Scelerisque duis ultrices sollicitudin
-          </p>
-          <button className={styles.buyNowBtn}>Buy Now</button>
-          <p className={styles.hurryText}>Hurry, Before It's Too Late!</p>
-          <div className={styles.timer}>
-            <Timer />
+    <section className={styles.section}>
+      <div className="container">
+        <div className={styles.dealsSection} >
+          <div className={styles.dealsLeft}>
+            <h2 className={styles.dealsTitle}>Deals Of The Month</h2>
+            <p className={styles.dealsDescription}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque duis ultrices sollicitudin aliquam sem. Scelerisque duis ultrices sollicitudin
+            </p>
+            <button className={styles.buyNowBtn}>Buy Now</button>
+            <p className={styles.hurryText}>Hurry, Before It's Too Late!</p>
+            <div className={styles.timer}>
+              <Timer />
+            </div>
+            <div className={styles.timerText}>
+              <p>Days</p>
+              <p>Hr</p>
+              <p>Mins</p>
+              <p>Sec</p>
+            </div>
           </div>
-          <div className={styles.timerText}>
-            <p>Days</p>
-            <p>Hr</p>
-            <p>Mins</p>
-            <p>Sec</p>
+          <div className={styles.dealsRight} >
+            <Slider images={images} />
           </div>
         </div>
-        <div className={styles.dealsRight} >
-          <Slider images={images} />
-        </div>
+        <p id="newArrivals" className={styles.text}>barev</p>
       </div>
-      <p id="newArrivals"className={styles.text}>barev</p>
-    </div>
+    </section>
   );
 };
 
