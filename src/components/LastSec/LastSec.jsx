@@ -32,30 +32,32 @@ function LastSec() {
   };
 
   return (
-    <div className="subscription-container">
-      <img src={left} alt="Left" className="left-image" />
+    <div className="container">
+      <div className="subscription-container">
+        <img src={left} alt="Left" className="left-image" />
 
-      <div className="middle-box">
-        <h2>Subscribe to Our Newsletter</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque
-          duis ultrices sollicitudin aliquam sem. Scelerisque duis ultrices
-          sollicitudin
-        </p>
+        <div className="middle-box">
+          <h2>Subscribe to Our Newsletter</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque
+            duis ultrices sollicitudin aliquam sem. Scelerisque duis ultrices
+            sollicitudin
+          </p>
 
-        <form onSubmit={handleSubmit}>
-          <input
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            placeholder="Enter your email"
-            required
-          />
-          <button type="submit">Subscribe Now</button>
-        </form>
+          <form onSubmit={handleSubmit}>
+            <input
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="Enter your email"
+              required
+            />
+            <button type="submit">Subscribe Now</button>
+          </form>
+        </div>
+
+        <img src={Right} alt="Right" className="right-image" />
       </div>
-
-      <img src={Right} alt="Right" className="right-image" />
     </div>
   );
 }

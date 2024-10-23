@@ -2,8 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 1280px;
-  margin: 0 auto;
+  margin-top: 180px;
+  margin-bottom: 50px;
 }
 
 .left-image,
@@ -13,15 +13,18 @@
 }
 
 .middle-box {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
 }
 
 .middle-box h2 {
   font-family: Volkhov;
   font-size: 46px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 59.34px;
-  text-align: center;
+  color: #484848;
 }
 
 .middle-box p {
@@ -31,30 +34,49 @@
   line-height: 26px;
   text-align: center;
   color: #8a8a8a;
+  max-width: 515px;
+  width: 100%;
 }
 
-.middle-box input {
-  width: 80%;
-  padding: 10px;
-  margin: 20px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
+form {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
 
-.middle-box button {
-  font-family: Poppins;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 16px;
-  text-align: center;
-  padding: 20px 44px;
-  color: rgb(255, 255, 255);
-  background-color: black;
-  border-radius: 10px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
+  input {
+    width: 100%;
+    padding: 28px 373px 32px 30px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    box-shadow: 0 10px 20px gray;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #8a8a8a;
+  }
 
-.middle-box button:hover {
-  background-color: #ffffff;
-  color: black;
+  button {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: center;
+    padding: 20px 44px;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: none;
+    outline: none;
+
+    &:hover {
+      background-color: #ffffff;
+      color: black;
+    }
+  }
+
 }
