@@ -11,7 +11,7 @@ import ROUTES from "../../../Routes";
 
 const Navsection = () => {
   return (
-    <div>
+    <div className="container">
       <section className={styles.nav_sec}>
         <div className={styles.grayBack}>
           <img src={grayShirt} alt="nav-sec-img" />
@@ -22,11 +22,11 @@ const Navsection = () => {
             <p className={styles.ultimate}>ULTIMATE</p>
             <p className={styles.sale}>SALE</p>
             <p className={styles.newColect}>NEW COLLECTION</p>
-           
-              <Link to={ROUTES.SHOP} className="uniqeClassOne">
-                <button>Shop Now</button>
-              </Link>
-          
+
+            <Link to={ROUTES.SHOP} className="uniqeClassOne">
+              <button>Shop Now</button>
+            </Link>
+
           </div>
           <img src={twoGirl} alt="nav-sec-info-img" />
         </div>

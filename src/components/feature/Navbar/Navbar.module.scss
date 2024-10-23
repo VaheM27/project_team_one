@@ -5,14 +5,13 @@
     display: flex;
     align-items: center;
     column-gap: 345px;
+    max-width: 1280px;
     width: 100%;
-    position: fixed;
+    padding: 70px 0 0 0;
+    position: sticky;
     z-index: 999;
     top: 0;
-    left: 0;
-    right: 0;
-    background-color: whitesmoke;
-    padding: 20px;
+    background-color: white;
 
     img {
       max-width: 171px;
@@ -30,14 +29,14 @@
         display: flex;
         align-items: center;
         column-gap: 58px;
-        list-style: none;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 24px;
-        color: #484848;
 
-        li, li >a {
-          color: black;
+        li,
+        li>a {
+          font-size: 17px;
+          font-weight: 500;
+          line-height: 24px;
+          color: #484848;
+
           &:hover {
             cursor: pointer;
             color: #f0a500;
@@ -49,19 +48,17 @@
       button {
         padding: 20px 46px 20px 45px;
         border-radius: 10px;
-        max-width: 152px;
-        width: 100%;
         font-size: 16px;
         font-weight: 400;
         line-height: 16px;
         text-align: center;
         color: white;
-        // background-color: black;
+        background-color: black;
         border: none;
         outline: none;
 
         &:hover {
-          background-color: rgba($color: #b9b7b7, $alpha: 0.7);
+          background-color: rgba($color: #b9b7b7, $alpha: 0.5);
           color: black;
           transition: all 0.4s;
         }
