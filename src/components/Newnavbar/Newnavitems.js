@@ -1,11 +1,11 @@
 const newnavItems = [
-    {
-      navName: "Home",
-      path : '/',
-    },
-    {
-      navName: "Products",
-    },
-  ];
-  
-  export default newnavItems;
+  {
+    navName: "Home",
+    path: '/',
+  },
+  {
+    navName: "Shop",
+  },
+];
+
+export default newnavItems;
