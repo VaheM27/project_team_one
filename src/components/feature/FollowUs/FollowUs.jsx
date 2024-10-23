@@ -1,8 +1,8 @@
 import React from 'react'
 
+import FollowUsData from './FollowUsData'
 import styles from "./FollowUs.module.scss"
 import "./FollowUs.module.scss"
-import FollowUsData from './FollowUsData'
 
 const FollowUs = () => {
     return (
