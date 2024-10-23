@@ -26,19 +26,19 @@ const Newarrivals = () => {
               <div key={item.id} className="post">
                 <img src={item.img} alt="" />
                 <div className="littleDiv">
-                <p>{item.title}</p>
-                <img src={item.stars} alt="" />
+                  <p>{item.title}</p>
+                  <img src={item.stars} alt="" />
                 </div>
                 <p className="views">{item.views}</p>
                 <div className="lastDiv">
-                    <p className="price">{item.price}</p>
-                    <p className="posit">{item.position}</p>
+                  <p className="price">{item.price}</p>
+                  <p className="posit">{item.position}</p>
                 </div>
               </div>
             );
           })}
         </div>
-        <button  id='packages'>View More</button>
+        <button id='packages'>View More</button>
       </div>
     </div>
   );
