@@ -26,15 +26,13 @@ const Costumersays = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   return (
-    <div>
-      <div className="costumer">
-        <div className="text">
-          <p className="first">This Is What Our Customers Say</p>
-          <p className="sec">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque
-            duis
-          </p>
-        </div>
+    <div className="container">
+      <div className="text">
+        <p className="first">This Is What Our Customers Say</p>
+        <p className="sec">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque
+          duis
+        </p>
       </div>
 
       <div className="slider-container">
