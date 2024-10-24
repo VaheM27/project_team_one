@@ -28,10 +28,10 @@ const ShopPage = () => {
 
   return (
     <div className="shop-page">
-      {/* <aside className="filter-section">
+      <aside className="filter-section">
         <h1 className="filter-title">Filters</h1>
 
-        <h3 className="filter-heading">Sizes</h3>
+        <h3 className="filter-heading">Size</h3>
         <div className="size-section">
           <ul className="size-filters">
             {["S", "M", "L", "XL"].map((size) => (
@@ -86,7 +86,7 @@ const ShopPage = () => {
             )}
           </ul>
         </div>
-      </aside> */}
+      </aside>
 
       <div className="product-list">
         <div className="texts">
@@ -122,7 +122,8 @@ const ShopPage = () => {
             ) : (
               <p>No products found.</p>
             )}
-          </div></div>
+          </div>
+        </div>
       </div>
     </div>
   );

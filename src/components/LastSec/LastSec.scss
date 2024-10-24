@@ -38,7 +38,7 @@
   width: 100%;
 }
 
-form {
+.lastSec-form {
   margin-top: 10px;
   width: 100%;
   display: flex;
@@ -76,6 +76,7 @@ form {
     &:hover {
       background-color: #ffffff;
       color: black;
+      border: 1px solid black;
     }
   }
 

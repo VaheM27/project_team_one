@@ -12,26 +12,28 @@ import "./Newnavbar.scss";
 
 const Newnavbar = () => {
   return (
-    <div className="container">
-      <nav>
-        <img src={Logo} alt="Logo" />
-        <div className="newNav_items">
-          <ul>
-            {newnavItems.map((item) => {
-              return <li><Link to={item.path}>{item.navName}</Link></li>;
-            })}
+    <div className="navbar">
+      <div className="container">
+        <nav>
+          <img src={Logo} alt="Logo" />
+          <div className="newNav_items">
+            <ul>
+              {newnavItems.map((item) => {
+                return <li><Link to={item.path}>{item.navName}</Link></li>;
+              })}
 
-            <li>Product</li>
-            <li>Pages</li>
-          </ul>
-          <div className="littleButtons">
-            <img src={icon1} alt="" className="firstlittle" />
-            <img src={icon2} alt="" />
-            <img src={icon3} alt="" />
-            <img src={icon4} alt="" />
+              <li>Product</li>
+              <li>Pages</li>
+            </ul>
+            <div className="littleButtons">
+              <img src={icon1} alt="" className="firstlittle" />
+              <img src={icon2} alt="" />
+              <img src={icon3} alt="" />
+              <img src={icon4} alt="" />
+            </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </div>
   );
 };

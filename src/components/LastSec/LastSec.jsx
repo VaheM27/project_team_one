@@ -44,7 +44,7 @@ function LastSec() {
             sollicitudin
           </p>
 
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit} className="lastSec-form">
             <input
               type="email"
               value={email}
