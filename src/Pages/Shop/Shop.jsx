@@ -28,7 +28,7 @@ const ShopPage = () => {
 
   return (
     <div className="shop-page">
-      <aside className="filter-section">
+      {/* <aside className="filter-section">
         <h1 className="filter-title">Filters</h1>
 
         <h3 className="filter-heading">Sizes</h3>
@@ -86,42 +86,43 @@ const ShopPage = () => {
             )}
           </ul>
         </div>
-      </aside>
+      </aside> */}
 
       <div className="product-list">
         <div className="texts">
           <p className="fashion">Fashion</p>
           <p className="under">Home / Fashion</p>
         </div>
-        <div className="products">
-          {state.filteredProducts.length > 0 ? (
-            state.filteredProducts.map((product) => (
-              <div key={product.id} className="product">
-                <img
-                  src={product.image}
-                  alt={product.name}
-                  className="product-image"
-                />
-                <h3 className="product-name">{product.name}</h3>
-                <p className="product-price">Price: ${product.price}</p>
-                <div className="color-palette">
-                  {product.colors.map((color, index) => (
-                    <div
-                      key={index}
-                      className="color-box"
-                      style={{ backgroundColor: color }}
-                    />
-                  ))}
+        <div className="product-part">
+          <div className="products">
+            {state.filteredProducts.length > 0 ? (
+              state.filteredProducts.map((product) => (
+                <div key={product.id} className="product">
+                  <img
+                    src={product.image}
+                    alt={product.name}
+                    className="product-image"
+                  />
+                  <h3 className="product-name">{product.name}</h3>
+                  <p className="product-price">Price: ${product.price}</p>
+                  <div className="color-palette">
+                    {product.colors.map((color, index) => (
+                      <div
+                        key={index}
+                        className="color-box"
+                        style={{ backgroundColor: color }}
+                      />
+                    ))}
+                  </div>
+                  <p className="product-sizes">
+                    Sizes: {product.sizes.join(", ")}
+                  </p>
                 </div>
-                <p className="product-sizes">
-                  Sizes: {product.sizes.join(", ")}
-                </p>
-              </div>
-            ))
-          ) : (
-            <p>No products found.</p>
-          )}
-        </div>
+              ))
+            ) : (
+              <p>No products found.</p>
+            )}
+          </div></div>
       </div>
     </div>
   );
